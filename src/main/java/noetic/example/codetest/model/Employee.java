@@ -24,11 +24,11 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "Employee first name is required")
+
     private String firstName;
 
     private String lastName;
-    @NotBlank(message = "Employee first name is required")
+
     private String employeeNum;
 
     @ManyToOne(fetch = FetchType.EAGER)

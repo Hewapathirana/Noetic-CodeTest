@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = DepartmentNotFoundException.class)
-    public ResponseEntity<Object> FileIdNotFoundException(Throwable ex) {
+    public ResponseEntity<Object> DeptIdNotFoundException(Throwable ex) {
         return new ResponseEntity<>(new ExceptionResponse("Department not found.Please add a Department first",404,ex), HttpStatus.NOT_FOUND);
     }
 
